@@ -75,7 +75,7 @@ size = 600
 root = Tk()
 canvas = Canvas(root, width=size, height=size)
 canvas.pack()
-img = PhotoImage(file="ant.png")
+img = PhotoImage(file="smoking_ant.png")
 canvas.create_image(150, 150, anchor=NW, image=img)
 read_map(rooms, links, action)
 draw_rooms(rooms)
