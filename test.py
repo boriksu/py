@@ -2,6 +2,7 @@ import fileinput
 from random import *
 from tkinter import *
 from time import *
+import tkinter
 
 def draw_rooms(rooms):
     colors = choice(['lime', 'lime'])
@@ -74,6 +75,8 @@ size = 600
 root = Tk()
 canvas = Canvas(root, width=size, height=size)
 canvas.pack()
+img = PhotoImage(file="ant.png")
+canvas.create_image(150, 150, anchor=NW, image=img)
 read_map(rooms, links, action)
 draw_rooms(rooms)
 draw_links(rooms, links)
